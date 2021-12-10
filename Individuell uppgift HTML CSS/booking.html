@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <title>Booking page</title>
+</head>
+<body>
+    <header class="navbar">
+        <article class="nav-container flex">
+            <img src="/images/logo/bonz.ai-logo-black_landscape.svg" alt="">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+    <main>
+        <article class="info grid">
+            <section class="big__showcase__form card">
+                <h2>Make your reservation</h2>
+                <form>
+                    <div class="form-contact">
+                        <input type="text" name="name" placeholder="Name"
+                        required>
+                    </div>
+                    <div class="form-contact">
+                        <input type="text" name="number" placeholder="Phone number"
+                        required>
+                    </div>
+                    <div class="form-contact">
+                        <input type="email" name="email" placeholder="Email"
+                        required>
+                    </div>
+                    <div class="form-contact">
+                        <label>No. Adults:</label>
+                        <input type="number" id="" name="adults" min="1" max="100"><br>
+                        <label>No. Children:</label>
+                        <input type="number" id="" name="children" min="1" max="100" required>
+                    </div>
+                    <label>Check in:</label>
+                    <div class="form-contact">
+                        <input type="date" id="" name="trip-start" value="2021-07-22" min="2021-01-01" max="2030-12-31">
+                    </div>
+                    <label>Check out:</label>
+                    <div class="form-contact">
+                        <input type="date" id="" name="trip-ends" value="2021-07-22" min="2021-01-01" max="2030-12-31">
+                        </div>
+                    
+                    <div class="form-contact">
+                    <input type="submit" value="Book your stay!" class="btn btn-prim">
+                    </div>
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+            <p> Bonz.ai &copy; 2022 Christopher Wahlström<a href="#"></a></p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    background-color: #F4F4F2;
+    line-height: 1.5;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 400;
+    color: #000;
+    line-height: 1.3;
+    margin: 10px 0;
+}
+
+.h1-white{
+    color: #fff;
+    font-size: 30px;
+}
+
+.p-white{
+    color: #fff;
+}
+
+p{
+    margin: 10px 0;
+}
+
+
+/*Navbar*/
+
+.navbar{
+    background-color: #fff;
+    height: 70px;
+
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    padding: 0 20px;
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px solid #000;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.nav-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    overflow: auto;
+}
+
+
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    margin: 10px;
+}
+
+img{
+    width: 200px;
+}
+
+/* Använt CSS button Generator för att testa fram utseendet på knappen*/
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #34cbd9;
+    text-decoration: none;
+    margin-top: 0px;
+  }
+  
+
+  .btn-outline{
+      border: 1px solid #fff;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+/*Main part for the hotel starting site*/
+
+.container{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    overflow: auto;
+}
+
+.big__showcase{
+    height: 400px;
+    background-image: url("/images/photos/09-night.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.big__showcase h1{
+    font-size: 30px;
+}
+
+.big__showcase p{
+    margin: 22px 0;
+}
+
+.big__showcase .grid{
+    grid-template-columns: 60% 40%;
+    gap: 30px;
+    
+}
+
+.big__showcase__form{
+    position: relative;
+    top: 60px;
+    height: auto;
+    width: 380px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: center;
+
+}
+
+.booking__form .card{
+    position: relative;
+    top: 60px;
+    height: 360px;
+    width: 380px;
+    padding: 40px;
+    z-index: 100;
+    justify-self: center;
+}
+
+.booking__form .form-contact{
+    margin: 20px 0;
+}
+
+
+.big__showcase__form .form-contact{
+    margin: 20px 0;
+}
+
+.booking__form input[type='text'],
+.booking__form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid rgb(102, 101, 101);
+    width: 100%;
+    font-size: 17px;
+    padding: 4px;
+}
+
+.big__showcase__form input[type='text'],
+.big__showcase__form input[type='email']{
+    border: 0;
+    border-bottom: 1px solid rgb(102, 101, 101);
+    width: 100%;
+    font-size: 17px;
+    padding: 4px;
+}
+
+.big__showcase__form input:focus{
+    outline: none;
+}
+
+
+/*Åter använder grid på andra sidor som :root funktionen*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*Boxes home sidan samt about(facilities) */
+
+.boxes{
+    margin-top: 80px;
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+
+.info{
+    background: #ddd;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem;
+    background: url("/images/photos/06-night.jpg");
+    background-size: cover;
+    min-height: 400px;
+}
+
+
+
+/* Portfolio på about sida*/
+
+.portfolio{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.portfolio img{
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Footer*/
+
+footer{
+    background-color: #F4F4F2;
+    background: #F4F4F2;
+    color: #000;
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.footer .social a {
+    margin: 0 10px;
+  }
+  
+  
+  .fa-facebook:hover {
+    color: #2f7de4;
+  }
+  
+  .fa-instagram:hover {
+    color: #d448a6;
+  }
+  
+  .fa-twitter:hover {
+    color: #379edf;
+  }
+  
+
+@media (max-width: 768px) {
+    .navbar,
+    .grid,
+    .boxes{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .big__showcase{
+        height: auto;
+    }
+
+    .big__showcase__form{
+        justify-self: center;
+        margin: auto;
+    }
+
+   .big__showcase__text{
+       margin-top: 40px;
+       text-align: center;
+   } 
+
+   .info{
+       text-align: center;
+   }
+}
+
+
+@media (max-width: 500px) {
+    .navbar {
+      height: 120px;
+    }
+  
+    .navbar .flex {
+      flex-direction: column;
+    }
+  
+    .navbar ul {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar ul li {
+      margin: 0;
+    }
+
+    .big__showcase__form{
+        width: 300px;
+    }
+
+  }
